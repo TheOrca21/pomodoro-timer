@@ -1,5 +1,6 @@
 import math
 from tkinter import *
+import winsound
 # ---------------------------- CONSTANTS ------------------------------- #
 PINK = "#e2979c"
 RED = "#e7305b"
@@ -60,6 +61,7 @@ def count_down(count):
         marks = ''
         for _ in range(math.floor(REPS/2)):
             marks += Tick
+        winsound.Beep(500, 2000)
         Tick_label['text'] = marks
 # ---------------------------- UI SETUP ------------------------------- #
 
